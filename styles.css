@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: white;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+.container {
+  width: 100%;
+  max-width: 1320px;
+  margin: auto;
+}
+
+/* Navigation bar */
+
+.navbar .logo {
+  width: 116px;
+  height: 44px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  height: 60px;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  color: #262626;
+  padding: 0 10px;
+}
+
+.navbar ul li a {
+  padding-bottom: 2px;
+}
+
+.navbar ul li a:hover {
+  border-bottom: 2px solid #262626;
+}
+
+.navbar ul.main-menu {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.navbar .right-menu .fas {
+  margin-left: 5px;
+  font-size: 10px;
+}
+
+.navbar .right-menu .far {
+  margin-left: 5px;
+  font-size: 18px;
+}
+
+/* Navigation bar ....... ends */
+
+/* Header banner */
+
+header::before {
+  content: "Lee cómo estamos respondiendo al brote de COVID-19 y encuentra recursos para ayudarte.";
+  background: #0067b8;
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  text-decoration: underline;
+  color: white;
+  padding: 12px;
+}
+
+header {
+  background: url(./images/slider-img.png) no-repeat center center/cover;
+}
+
+.header-banner {
+  width: 45%;
+  height: 489px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 0 60px;
+}
+
+.header-banner h1,
+p {
+  margin-bottom: 20px;
+}
+
+.header-banner .links a {
+  display: inline-block;
+  margin-right: 40px;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.links .left-link,
+.right-link {
+  font-weight: 600;
+  line-height: 1.6;
+  padding: 8px 20px;
+}
+
+.links .right-link {
+  color: #000;
+  font-weight: 500;
+  background: transparent;
+}
+
+.links .left-link {
+  background: #000;
+  color: white;
+}
+
+.links a i {
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+.links a:hover i {
+  margin-left: 15px;
+}
+
+/* Header banner ......ends */
+
+/* Microsoft Products */
+
+.microsoft-products {
+  margin: 80px 0;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.microsoft-products .office365,
+.xbox,
+.windows {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 184px;
+  height: 112px;
+}
+
+.microsoft-products h2 {
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 20px;
+  max-width: 125px;
+  text-align: center;
+}
+
+.microsoft-products h2:hover {
+  text-decoration: underline;
+}
+
+/* Microsoft products ........ends */
+
+/* grid-items */
+
+.grid-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+  margin-bottom: 40px;
+}
+
+.grid-items img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.grid-items p {
+  margin: 10px 0 20px 0;
+}
+
+.grid-items a {
+  font-weight: 600;
+  color: #0067b8;
+}
+
+.grid-items a:hover {
+  text-decoration: underline;
+}
+
+.grid-items a i {
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.grid-items a:hover i {
+  margin-left: 15px;
+}
+
+/* grid-items ....... ends */
+
+/* Outlook Android and iOS call to action banner */
+.ios {
+  background: url(./images/phone-img.jpeg) no-repeat center center/cover;
+  width: 100%;
+  height: 489px;
+  margin-bottom: 40px;
+  padding: 0 0 0 60px;
+}
+
+.content {
+  width: 45%;
+  height: 489px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content .btn {
+  align-self: flex-start;
+  background: #000;
+  color: white;
+  font-weight: 600;
+  line-height: 1.6;
+  padding: 8px 20px;
+}
+
+.content .btn i {
+  margin-left: 10px;
+}
+
+.content .btn:hover {
+  text-decoration: underline;
+}
+
+.content .btn:hover i {
+  margin-left: 15px;
+}
+/* Outlook Android and iOS call to action banner ......ends */
+
+/* business products  */
+.business-products h2 {
+  margin-bottom: 20px;
+}
+/* business products ....... ends  */
+
+/* social icons */
+.social {
+  margin-top: 10px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+}
+
+.social i {
+  margin-left: 15px;
+  color: #0067b8;
+}
+
+.social span {
+  color: #666;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 15px;
+}
+
+.social .fa-facebook-square {
+  color: #425daa;
+}
+
+.social .fa-twitter-square {
+  color: #55acee;
+}
+
+.social .fa-linkedin {
+  color: #0177b5;
+}
+
+/* social icons .....ends */
+/* footer */
+
+.footer {
+  background: #f2f2f2;
+  padding: 40px 0 30px;
+}
+
+.footer-links {
+  margin: auto;
+  width: 1320px;
+  padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+}
+
+.footer-links ul li {
+  margin-bottom: 15px;
+  font-size: 11px;
+  color: #333;
+}
+
+.footer-links ul .link-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.main-footer {
+  width: 1320px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+}
+
+.main-footer .language {
+  font-size: 11px;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+.main-footer .language i {
+  margin-right: 10px;
+  color: rgba(51, 51, 51, 0.7);
+}
+
+.main-footer ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-footer ul li {
+  font-size: 11px;
+  margin-right: 20px;
+  color: #333;
+}
+.main-footer .copyright {
+  font-size: 11px;
+  color: #333;
+}
+
+/* footer .....ends */
